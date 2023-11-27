@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Marketplace</title>
+</head>
+<body>
+
+<div id="marketplace">
+    <h1>Marketplace</h1>
+
+    <div id="product-list">
+        <!-- Product list will be displayed here -->
+    </div>
+
+    <div id="purchase-form">
+        <h2>Purchase Product</h2>
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" required>
+
+        <button onclick="purchaseProduct()">Purchase</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
